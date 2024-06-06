@@ -12,4 +12,13 @@ Stack
 
 ---
 https://tailwindcss.com/docs/guides/astro
+
 https://docs.astro.build/es/getting-started/
+
+https://www.shutterstock.com/es/video
+
+
+--- TODO:
+- Header
+    - desplegable de iconos sociales
+    - responsive
