@@ -22,3 +22,5 @@ https://www.shutterstock.com/es/video
 - Header
     - desplegable de iconos sociales
     - responsive
+- Description
+    - responsive
