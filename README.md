@@ -18,6 +18,9 @@ https://docs.astro.build/es/getting-started/
 
 https://www.shutterstock.com/es/video
 
+carousel: https://naver.github.io/egjs-flicking/docs/quick-start
+
+images: https://unsplash.com/es
 
 --- TODO:
 - General
@@ -36,3 +39,5 @@ https://www.shutterstock.com/es/video
     - responsive
     - función open/close desplegables
     - componente servicio pasando todos los datos y la posición de la img
+- Counter
+    - responsive
