@@ -6,6 +6,7 @@ Stack
 - astro
 - tailwind & tailwind-animated
 - fontsource
+- tabler icons
 
 [Overpass](https://fontsource.org/fonts/overpass/) para titulos y menús en mayusculas
 [work-sans](https://fontsource.org/fonts/work-sans/) para el resto
@@ -19,8 +20,19 @@ https://www.shutterstock.com/es/video
 
 
 --- TODO:
+- General
+    - Title
+    - Description
+    - favicon
+    - traducción En / ES (i18n)
 - Header
     - desplegable de iconos sociales
     - responsive
+- Video
+    - buscar un video de mejor calidad
 - Description
     - responsive
+- Services
+    - responsive
+    - función open/close desplegables
+    - componente servicio pasando todos los datos y la posición de la img
