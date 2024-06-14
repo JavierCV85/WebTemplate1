@@ -18,7 +18,7 @@ https://docs.astro.build/es/getting-started/
 
 https://www.shutterstock.com/es/video
 
-carousel: https://naver.github.io/egjs-flicking/docs/quick-start
+carousel: https://naver.github.io/egjs-flicking/docs/quick-start / https://naver.github.io/egjs-flicking/Demos
 
 images: https://unsplash.com/es
 
@@ -40,4 +40,7 @@ images: https://unsplash.com/es
     - función open/close desplegables
     - componente servicio pasando todos los datos y la posición de la img
 - Counter
+    - responsive
+- Clients
+    - el carrusel no me funciona
     - responsive

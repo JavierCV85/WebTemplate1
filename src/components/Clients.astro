@@ -1,13 +1,11 @@
 ---
-
+import CarouselClients  from "./CarouselClients";
+import SectionHeader from '@/components/SectionHeader.astro';
 ---
 <section class="w-full my-24">
-    <header class="flex flex-col mx-auto justify-center items-center mb-16">
-        <h3 class="font-overpass text-2xl border-b-2 border-primary mb-5">
-            Our Clients
-        </h3>
-        <p class="font-worksans text-5xl mb-16">
-            <strong>LEADING BRANDS</strong> IN DIGITAL MARKETING
-        </p>
-    </header>
+    <SectionHeader 
+        title="Our Clients"
+        subtitle="<strong>LEADING BRANDS</strong> IN DIGITAL MARKETING"
+    />
+    <CarouselClients />
 </section>
