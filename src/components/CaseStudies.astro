@@ -1,5 +1,6 @@
 ---
 import SectionHeader from '@/components/SectionHeader.astro';
+import CaseStudieItem from '@/components/CaseStudieItem.astro';
 ---
 <section class="w-full mt-24">
     <SectionHeader 
@@ -7,5 +8,75 @@ import SectionHeader from '@/components/SectionHeader.astro';
     />
 </section>
 <section class="w-full max-w-[1400px] grid auto-rows-[30rem] gap-4 mx-auto mb-24">
-    
+    <CaseStudieItem
+        class="col-span-10"
+        title="The Sweetest Online Shop"
+        subtitle="E-commerce"
+        client="Chocolatitos WW"
+    >
+        <div
+            slot="image"
+            class="
+                absolute left-0 top-0 bottom-0 w-full
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-blend-luminosity bg-cover bg-center 
+                bg-no-repeat -z-10
+            "
+            style="background-image: url('/case-1.webp')"
+        ></div>
+    </CaseStudieItem>
+
+    <CaseStudieItem
+        class="col-span-5"
+        title="A Playful Approach to Entertainment Marketing"
+        subtitle="Customer Loyalty"
+        client="ViveElCine"
+    >
+        <div
+            slot="image"
+            class="
+                absolute left-0 top-0 bottom-0 w-full
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-blend-luminosity bg-cover bg-center 
+                bg-no-repeat -z-10
+            "
+            style="background-image: url('/case-2.webp')"
+        ></div>
+    </CaseStudieItem>
+
+    <CaseStudieItem
+        class="col-span-5"
+        title="A Personal Journey with the Derby Suitcase"
+        subtitle="Gamification"
+        client="Hotel Costa Verano"
+    >
+        <div
+            slot="image"
+            class="
+                absolute left-0 top-0 bottom-0 w-full
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-blend-luminosity bg-cover bg-center 
+                bg-no-repeat -z-10
+            "
+            style="background-image: url('/case-3.webp')"
+        ></div>
+    </CaseStudieItem>
+
+    <CaseStudieItem
+        class="col-span-10"
+        title="Data Integration to Improve Customer Intelligence"
+        subtitle="CRM & Data Integration"
+        client="El contador"
+    >
+        <div
+            slot="image"
+            class="
+                absolute left-0 top-0 bottom-0 w-full
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-blend-luminosity bg-cover bg-center 
+                bg-no-repeat -z-10
+            "
+            style="background-image: url('/case-1.webp')"
+        ></div>
+    </CaseStudieItem>
 </section>

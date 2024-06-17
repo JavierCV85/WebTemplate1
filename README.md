@@ -28,6 +28,7 @@ images: https://unsplash.com/es
     - Description
     - favicon
     - traducción En / ES (i18n)
+    - sectionheader (mb incorrecto cuando no hay subtitle)
 - Header
     - desplegable de iconos sociales
     - responsive
@@ -43,4 +44,6 @@ images: https://unsplash.com/es
     - responsive
 - Clients
     - el carrusel no me funciona
+    - responsive
+- CaseStudies
     - responsive
