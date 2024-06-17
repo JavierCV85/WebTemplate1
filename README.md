@@ -47,3 +47,6 @@ images: https://unsplash.com/es
     - responsive
 - CaseStudies
     - responsive
+- Banner 
+    - responsive
+    - no me gusta la forma de hacer que el link sea condicional... 

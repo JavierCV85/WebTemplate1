@@ -28,13 +28,16 @@ import Contact from '@/components/Contact.astro';
 		<Clients />
 		<Testimonials />
 		<CaseStudies />
-		<Banner /><!-- Al banner se le ha de pasar la img, enlace (opcional) y si ocupa el 100% o no -->
+		<Banner 
+			img="./banner-1.webp"
+			alt="Banner 1"
+			url="https://www.google.es"
+			class="w-10/12 mb-24"
+		/>
 		<Podcast />
 		<Team />
 		<Lab />
 		<Partners />
-		<Banner />
 		<Contact />
-		<Banner />
 	</main>		
 </Layout>
