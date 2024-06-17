@@ -32,6 +32,7 @@ images: https://unsplash.com/es
 - Header
     - desplegable de iconos sociales
     - responsive
+    - cambio estilos cuando se hace scroll
 - Video
     - buscar un video de mejor calidad
 - Description

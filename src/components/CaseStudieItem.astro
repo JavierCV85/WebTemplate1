@@ -20,12 +20,12 @@ const { title, subtitle, client } = Astro.props
 `}>
     <div class="
         absolute z-10 bottom-0 top-0 w-full h-full
-        bg-gradient-to-b from-transparent from-40% via-[#151836]/50 to-[#151836]/80
+        bg-gradient-to-b from-transparent from-40% via-[#151836]/60 to-[#151836]/90
     "></div>
     <slot name="image"></slot>
     <div class="relative select-none flex flex-col gap1 p-2 md:p-6 text-lg z-20 justify-end h-full">
         <h2 class="text-3xl font-semibold text-balance text-white mb-4">{title}</h2>
-        <h3 class="text-3xl font-semibold text-sky-200/80 -mt-4 mb-4">{client}</h3>
-        <h3 class="text-3xl font-semibold text-sky-200/80 -mt-4 mb-4">{subtitle}</h3>
+        <h3 class="text-3xl font-semibold text-primary-light -mt-4 mb-4">{client}</h3>
+        <h3 class="text-3xl font-semibold text-white/80 -mt-4 mb-4">{subtitle}</h3>
     </div>
 </article>

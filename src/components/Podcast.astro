@@ -1,0 +1,36 @@
+---
+import SectionHeader from '@/components/SectionHeader.astro';
+---
+<section class="w-full bg-gray-100 py-16">
+    <SectionHeader 
+        title="The Podcast"
+        subtitle="MARKETING & INNOVATION"
+    />
+    <div class="relative w-full max-w-lg mx-auto mb-10 group ">
+        <a href="https://youtube.com">
+            <img 
+                class="w-full"
+                src="./podcast.webp"
+                alt="Podcast"
+            />
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" 
+                width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D3012C" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="#D3012C" />
+            </svg>
+        </a>
+    </div>
+    <div class="w-4/12 mx-auto mb-9 text-center">
+        <p class="font-worksans uppercase font-bold">PRACTICAL RESOURCES & LINKS</p>
+        <a class="font-worksans text-primary underline" href="#" target="_blank">"How to Unmask Your Most Profitable Customer" · Blog post.</a>
+    </div>
+    <div class="w-4/12 mx-auto mb-9 text-center">
+        <p class="font-worksans uppercase font-bold">WATCH ON OUR NEW YOUTUBE CHANNEL</p>
+        <a class="font-worksans text-primary underline" href="#" target="_blank">Podcast Trailers & Live Session Videos. Subscribe for Bonus perks!</a>
+    </div>
+    <div class="w-4/12 mx-auto mb-9 text-center">
+        <p class="font-worksans uppercase font-bold">LISTEN TO ALL EPISODES</p>
+        <a class="font-worksans text-primary underline" href="#" target="_blank">Go to our Podcast Directory for Seasons 1–6</a>
+    </div>
+</section>
