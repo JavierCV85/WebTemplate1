@@ -13,11 +13,11 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/preact": "^3.4.0",
     "@astrojs/tailwind": "^5.1.0",
-    "@egjs/preact-flicking": "^4.11.3",
     "@fontsource-variable/overpass": "^5.0.19",
     "@fontsource-variable/work-sans": "^5.0.19",
     "astro": "^4.9.3",
     "preact": "^10.22.0",
+    "swiper": "^11.1.14",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   },

@@ -7,6 +7,7 @@ Stack
 - tailwind & tailwind-animated
 - fontsource
 - tabler icons
+- [swiper](https://swiperjs.com/)
 
 [Overpass](https://fontsource.org/fonts/overpass/) para titulos y menús en mayusculas
 [work-sans](https://fontsource.org/fonts/work-sans/) para el resto
@@ -44,10 +45,13 @@ images: https://unsplash.com/es
 - Counter
     - responsive
 - Clients
-    - el carrusel no me funciona
+    - configurar bien el carrusel
     - responsive
 - CaseStudies
     - responsive
 - Banner 
     - responsive
     - no me gusta la forma de hacer que el link sea condicional... 
+- Podcast
+    - Buscar player
+    - responsive

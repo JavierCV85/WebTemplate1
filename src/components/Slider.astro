@@ -1,0 +1,65 @@
+---
+
+const { content } = Astro.props;
+
+---
+<p></p>
+<div class="w-10/12 mx-auto text-center">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Los slides -->
+          {content.map(({ url, img, alt }) => (
+            <div class="swiper-slide">
+              <a href={url} target="_blank">
+                <img 
+                  src={`/clients/${img}`} 
+                  alt={alt} 
+                  class="grayscale hover:grayscale-0 transition-grayscale duration-500"
+                />
+              </a>
+            </div>    
+          ))}
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+</div>
+
+<script>
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    import { Navigation } from "swiper/modules";
+    import "swiper/css/navigation";
+  
+    // Configurar Swiper
+    const swiper = new Swiper(".swiper", {
+      modules: [Navigation], // definir los módulos a usar
+      loop: true,            // definir si los slides estarán en bucle
+      slidesPerView: 5,      // agregar número de slides para la pantalla
+      spaceBetween: 20,      // separación entre slides en px
+      breakpoints: {
+        // Cuando la pantalla es >= 768px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // Cuando la pantalla es >= 1024px
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 40
+        }
+      },
+      navigation: {          // definir botones next y prev para el módulo Navigation
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+      }
+    });
+</script>
+
+<style>
+  .swiper-button-prev:after, .swiper-button-next:after{
+    color: #aaa;
+    font-size: 25px;
+  }
+</style>

@@ -1,11 +1,63 @@
 ---
-import CarouselClients  from "./CarouselClients";
+import Slider from '@/components/Slider.astro';
 import SectionHeader from '@/components/SectionHeader.astro';
+
+const content = [
+    {
+        'img':'c1.webp',
+        'url':'#',
+        'alt':'Ps3'
+    },
+    {
+        'img':'c2.webp',
+        'url':'#',
+        'alt':'Universal'
+    },
+    {
+        'img':'c3.webp',
+        'url':'#',
+        'alt':'Deuche Bank'
+    },
+    {
+        'img':'c4.webp',
+        'url':'#',
+        'alt':'Martini'
+    },
+    {
+        'img':'c5.webp',
+        'url':'#',
+        'alt':'Sony'
+    },
+    {
+        'img':'c6.webp',
+        'url':'#',
+        'alt':'Heineken'
+    },
+    {
+        'img':'c7.webp',
+        'url':'#',
+        'alt':'AMC'
+    },
+    {
+        'img':'c8.webp',
+        'url':'#',
+        'alt':'Mercedes'
+    },
+    {
+        'img':'c9.webp',
+        'url':'#',
+        'alt':'Donuts'
+    },
+];
+
+
 ---
 <section class="w-full my-24">
     <SectionHeader 
         title="Our Clients"
         subtitle="<strong>LEADING BRANDS</strong> IN DIGITAL MARKETING"
     />
-    <CarouselClients />
+    <Slider 
+        content={content}
+    />
 </section>
