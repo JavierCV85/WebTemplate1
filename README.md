@@ -33,7 +33,7 @@ images: https://unsplash.com/es
 - Header
     - desplegable de iconos sociales
     - responsive
-    - cambio estilos cuando se hace scroll
+    - cambio estilos cuando se hace scroll (y corregir error de que ocupa mucho)
 - Video
     - buscar un video de mejor calidad
 - Description
@@ -55,3 +55,8 @@ images: https://unsplash.com/es
 - Podcast
     - Buscar player
     - responsive
+- Team
+    - responsive
+    - mejorar hover de los circulos
+    - más margin bottom en los circulos
+    - circulos como componente? (si, mucho mejor)
