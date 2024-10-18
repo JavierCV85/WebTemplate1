@@ -60,3 +60,6 @@ images: https://unsplash.com/es
     - mejorar hover de los circulos
     - más margin bottom en los circulos
     - circulos como componente? (si, mucho mejor)
+- Lab
+    - responsive
+    - botón como componente aparte
