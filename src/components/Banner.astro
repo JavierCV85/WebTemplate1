@@ -1,6 +1,7 @@
 ---
 interface Props{
-    class: string
+    containerClass: string
+    bannerClass: string
     img: string
     alt?: string
     url?: string
@@ -9,18 +10,19 @@ interface Props{
 const { img, alt, url } = Astro.props
 ---
 <div class={`
-    ${Astro.props.class}
+    ${Astro.props.containerClass}
     mx-auto    
 `}>
     {url && <a href={url} target="_blank" class="relative">
         <img 
             src={img} 
             alt={alt} 
-            class="rounded-xl
-                    blackdrop-blur-md
-                    border border-black/10
-                    shadow-inner shadow-white/10"
-        />
+            class={`
+                blackdrop-blur-md
+                border border-black/10
+                shadow-inner shadow-white/10
+                ${Astro.props.bannerClass}    
+            `}/>
     </a>}
     {!url && <img src={img} alt={alt} />}
 </div>
