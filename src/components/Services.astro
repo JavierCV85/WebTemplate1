@@ -1,517 +1,203 @@
+---
+import ServicesItem from '@/components/ServicesItem.astro';
+---
+
 <div class="w-full bg-gray-100 py-16">
 
-    <section class="w-10/12 grid grid-cols-12 gap-5 mx-auto mb-16">
-        <div class="col-span-3 col-start-2">
-            <img src="services-1.webp" alt="" />
-        </div>
-        <div class="col-span-6 col-start-6 place-content-center">
-            <h3 class="font-worksans font-bold text-6xl mb-9">
-                Brand Strategy
-            </h3>
-            <p class="font-worksans font-bold text-4xl mb-7">
-                Create value with Excellence in Design
-            </p>
-            <p class="font-overpass text-2xl mb-10">
-                Leading Brands are born from Design Thinking. Express your own DNA with a captivating and engaging Identity.
-            </p>
-            <p class="flex flex-row cursor-pointer btn_desplegable" data-id="section1">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="66" height="66" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c4149" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ServicesItem
+        containerClass="mt-0"
+        imgPosition="left"
+        imgUrl="services-1.webp"
+        title="Brand Strategy"
+        subtitle="Create value with Excellence in Design"
+        text="Leading Brands are born from Design Thinking. Express your own DNA with a captivating and engaging Identity."
+        dataID="section1"
+        d1_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-target-arrow" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M6 9l6 6l6 -6" />
-                </svg>
-                <span class="place-content-center font-overpass text-2xl">Know more</span>
-            </p>
-        </div>
-    </section>
-    <div class="w-full bg-primary text-white content_desplegable h-0 overflow-hidden transition-all" data-id="section1">
-        <div class="w-10/12 grid grid-cols-11 gap-5 mx-auto py-12 pl-12">
-            <div class="col-span-3 col-start-2">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-target-arrow" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                        <path d="M12 7a5 5 0 1 0 5 5" />
-                        <path d="M13 3.055a9 9 0 1 0 7.941 7.945" />
-                        <path d="M15 6v3h3l3 -3h-3v-3z" />
-                        <path d="M15 9l-3 3" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Brand Analysis</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Market Research
-                    </li>
-                    <li class="font-bold mb-1">
-                        Positioning
-                    </li>
-                    <li class="font-bold mb-1">
-                        Tone & Voice
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3 ">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-writing" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M20 17v-12c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v12l2 2l2 -2z" />
-                        <path d="M16 7h4" />
-                        <path d="M18 19h-13a2 2 0 1 1 0 -4h4a2 2 0 1 0 0 -4h-3" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Brand Design</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Logo & Style Guide
-                    </li>
-                    <li class="font-bold mb-1">
-                        Conversion-Centric Design
-                    </li>
-                    <li class="font-bold mb-1">
-                        Website / Mobile
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
-                        <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
-                        <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
-                        <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
-                        <path d="M5 3l-1 -1" />
-                        <path d="M4 7h-1" />
-                        <path d="M14 3l1 -1" />
-                        <path d="M15 6h1" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Brand Experience</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        UX / UI
-                    </li>
-                    <li class="font-bold mb-1">
-                        Video Branding
-                    </li>
-                    <li class="font-bold mb-1">
-                        Audio Branding
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                    <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 7a5 5 0 1 0 5 5" />
+                    <path d="M13 3.055a9 9 0 1 0 7.941 7.945" />
+                    <path d="M15 6v3h3l3 -3h-3v-3z" />
+                    <path d="M15 9l-3 3" />
+                </svg>`}
+        d1_title="Brand Analysis"
+        d1_li={['<li class="font-bold mb-1">Market Research</li>','<li class="font-bold mb-1">Positioning</li>','<li class="font-bold mb-1">Tone & Voice</li>']}
+        d2_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-writing" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 17v-12c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v12l2 2l2 -2z" />
+                    <path d="M16 7h4" />
+                    <path d="M18 19h-13a2 2 0 1 1 0 -4h4a2 2 0 1 0 0 -4h-3" />
+                </svg>`}
+        d2_title="Brand Design"
+        d2_li={['<li class="font-bold mb-1">Market Research</li>','<li class="font-bold mb-1">Positioning</li>','<li class="font-bold mb-1">Tone & Voice</li>']}
+        d3_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                    <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                    <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                    <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                    <path d="M5 3l-1 -1" />
+                    <path d="M4 7h-1" />
+                    <path d="M14 3l1 -1" />
+                    <path d="M15 6h1" />
+                </svg>`}
+        d3_title="Brand Experience"
+        d3_li={['<li class="font-bold mb-1">Market Research</li>','<li class="font-bold mb-1">Positioning</li>','<li class="font-bold mb-1">Tone & Voice</li>']}
+    />
 
-    <section class="w-10/12 grid grid-cols-12 gap-5 mx-auto mt-32 mb-16">
-        <div class="col-span-6 col-start-2 place-content-center">
-            <h3 class="font-worksans font-bold text-6xl mb-9">
-                Digital Strategy
-            </h3>
-            <p class="font-worksans font-bold text-4xl mb-7">
-                Connect with your most profitable Targets
-            </p>
-            <p class="font-overpass text-2xl mb-10">
-                We help you to identify your most profitable clients and develop strategies to impact them in the right place and at the right time.
-            </p>
-            <p class="flex flex-row cursor-pointer btn_desplegable" data-id="section2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="66" height="66" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c4149" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ServicesItem
+        containerClass=""
+        imgPosition="right"
+        imgUrl="services-2.webp"
+        title="Digital Strategy"
+        subtitle="Connect with your most profitable Targets"
+        text="We help you to identify your most profitable clients and develop strategies to impact them in the right place and at the right time."
+        dataID="section2"
+        d1_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M6 9l6 6l6 -6" />
-                </svg>
-                <span class="place-content-center font-overpass text-2xl">Know more</span>
-            </p>
-        </div>
-        <div class="col-span-3 col-start-9">
-            <img src="services-2.webp" alt="" />
-        </div>
-    </section>
-    <div class="w-full bg-primary text-white content_desplegable h-0 overflow-hidden transition-all" data-id="section2">
-        <div class="w-10/12 grid grid-cols-11 gap-5 mx-auto py-12 pl-12">
-            <div class="col-span-3 col-start-2">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Customer</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Profitability Analysis
-                    </li>
-                    <li class="font-bold mb-1">
-                        Buyer Persona
-                    </li>
-                    <li class="font-bold mb-1">
-                        Digital Lifestyle
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3 ">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
-                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
-                        <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
-                        <path d="M12 17v1m0 -8v1" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Sales</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Funnel Optimisation
-                    </li>
-                    <li class="font-bold mb-1">
-                        Tactical Campaigns
-                    </li>
-                    <li class="font-bold mb-1">
-                        Geomarketing
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-star" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                </svg>`}
+        d1_title="Customer"
+        d1_li={['<li class="font-bold mb-1">Profitability Analysis</li>','<li class="font-bold mb-1">Buyer Persona</li>','<li class="font-bold mb-1">Digital Lifestyle</li>']}
+        d2_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                    <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                    <path d="M12 17v1m0 -8v1" />
+                </svg>`}
+        d2_title="Sales"
+        d2_li={['<li class="font-bold mb-1">Funnel Optimisation</li>','<li class="font-bold mb-1">Tactical Campaigns</li>','<li class="font-bold mb-1">Geomarketing</li>']}
+        d3_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-star" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
                         <path d="M6 21v-2a4 4 0 0 1 4 -4h.5" />
                         <path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Loyalty</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Retention Programmes
-                    </li>
-                    <li class="font-bold mb-1">
-                        Gamification
-                    </li>
-                    <li class="font-bold mb-1">
-                        Affiliate Marketing
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                    </svg>`}
+        d3_title="Loyalty"
+        d3_li={['<li class="font-bold mb-1">Retention Programmes</li>','<li class="font-bold mb-1">Gamification</li>','<li class="font-bold mb-1">Affiliate Marketing</li>']}
+    />
 
-
-    <section class="w-10/12 grid grid-cols-12 gap-5 mx-auto mt-32 mb-16">
-        <div class="col-span-3 col-start-2">
-            <img src="services-3.webp" alt="" />
-        </div>
-        <div class="col-span-6 col-start-6 place-content-center">
-            <h3 class="font-worksans font-bold text-6xl mb-9">
-                E-Commerce
-            </h3>
-            <p class="font-worksans font-bold text-4xl mb-7">
-                Increase your Sales with new online customers
-            </p>
-            <p class="font-overpass text-2xl mb-10">
-                We create your online store from scratch or help you admin your e-commerce and make it more profitable with Promotion and Growth Strategies.
-            </p>
-            <p class="flex flex-row cursor-pointer btn_desplegable" data-id="section3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="66" height="66" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c4149" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ServicesItem
+        containerClass=""
+        imgPosition="left"
+        imgUrl="services-3.webp"
+        title="E-Commerce"
+        subtitle="Increase your Sales with new online customers"
+        text="We create your online store from scratch or help you admin your e-commerce and make it more profitable with Promotion and Growth Strategies."
+        dataID="section3"
+        d1_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M6 9l6 6l6 -6" />
-                </svg>
-                <span class="place-content-center font-overpass text-2xl">Know more</span>
-            </p>
-        </div>
-    </section>
-    <div class="w-full bg-primary text-white content_desplegable h-0 overflow-hidden transition-all" data-id="section3">
-        <div class="w-10/12 grid grid-cols-11 gap-5 mx-auto py-12 pl-12">
-            <div class="col-span-3 col-start-2">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
-                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">E-Commerce Creation</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Development
-                    </li>
-                    <li class="font-bold mb-1">
-                        Addons & Modules
-                    </li>
-                    <li class="font-bold mb-1">
-                        Maintenance & Helpdesk
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3 ">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 21l18 0" />
-                        <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
-                        <path d="M5 21l0 -10.15" />
-                        <path d="M19 21l0 -10.15" />
-                        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Marketplaces</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Amazon, AliExpress
-                    </li>
-                    <li class="font-bold mb-1">
-                        Marketplace Promotion
-                    </li>
-                    <li class="font-bold mb-1">
-                        Product Sync
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-share" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                        <path d="M12.5 17h-6.5v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                        <path d="M16 22l5 -5" />
-                        <path d="M21 21.5v-4.5h-4.5" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">E-Commerce Marketing </h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Automated E-Mails
-                    </li>
-                    <li class="font-bold mb-1">
-                        AI Smart Search
-                    </li>
-                    <li class="font-bold mb-1">
-                        Live Shopping
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="w-10/12 grid grid-cols-12 gap-5 mx-auto mt-32 mb-16">
-        <div class="col-span-6 col-start-2 place-content-center">
-            <h3 class="font-worksans font-bold text-6xl mb-9">
-                E-Mail Marketing
-            </h3>
-            <p class="font-worksans font-bold text-4xl mb-7">
-                Reach consumers with relevance, in Real Time
-            </p>
-            <p class="font-overpass text-2xl mb-10">
-                Stop boring all your customers with the same message. Let's create more effective customer journeys together with AI-based Marketing Automation.
-            </p>
-            <p class="flex flex-row cursor-pointer btn_desplegable" data-id="section4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="66" height="66" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c4149" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+                    <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                </svg>`}
+        d1_title="E-Commerce Creation"
+        d1_li={['<li class="font-bold mb-1">Development</li>','<li class="font-bold mb-1">Addons & Modules</li>','<li class="font-bold mb-1">Maintenance & Helpdesk</li>']}
+        d2_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M6 9l6 6l6 -6" />
-                </svg>
-                <span class="place-content-center font-overpass text-2xl">Know more</span>
-            </p>
-        </div>
-        <div class="col-span-3 col-start-9">
-            <img src="services-4.webp" alt="" />
-        </div>
-    </section>
-    <div class="w-full bg-primary text-white content_desplegable h-0 overflow-hidden transition-all" data-id="section4">
-        <div class="w-10/12 grid grid-cols-11 gap-5 mx-auto py-12 pl-12">
-            <div class="col-span-3 col-start-2">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 14l11 -11" />
-                        <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">E-Mail Automation </h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Customer Journeys
-                    </li>
-                    <li class="font-bold mb-1">
-                        Triggers & Business Rules
-                    </li>
-                    <li class="font-bold mb-1">
-                        Omnichannel Experiences
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3 ">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3" />
-                        <path d="M4 6v6c0 1.453 2.755 2.665 6.414 2.941" />
-                        <path d="M20 11v-5" />
-                        <path d="M4 12v6c0 1.579 3.253 2.873 7.383 2.991" />
-                        <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Data Integration</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Data Architecture
-                    </li>
-                    <li class="font-bold mb-1">
-                        CRM / Data Optimisation
-                    </li>
-                    <li class="font-bold mb-1">
-                        Reporting
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
-                        <path d="M9 9h6v6h-6z" />
-                        <path d="M3 10h2" />
-                        <path d="M3 14h2" />
-                        <path d="M10 3v2" />
-                        <path d="M14 3v2" />
-                        <path d="M21 10h-2" />
-                        <path d="M21 14h-2" />
-                        <path d="M14 21v-2" />
-                        <path d="M10 21v-2" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">AI Personalisation </h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Smart Content
-                    </li>
-                    <li class="font-bold mb-1">
-                        Smart Audiences
-                    </li>
-                    <li class="font-bold mb-1">
-                        Smart Deliverability
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="w-10/12 grid grid-cols-12 gap-5 mx-auto mt-32 mb-16">
-        <div class="col-span-3 col-start-2">
-            <img src="services-5.webp" alt="" />
-        </div>
-        <div class="col-span-6 col-start-6 place-content-center">
-            <h3 class="font-worksans font-bold text-6xl mb-9">
-                Video & Voice
-            </h3>
-            <p class="font-worksans font-bold text-4xl mb-7">
-                Share your Brand Story in compelling ways
-            </p>
-            <p class="font-overpass text-2xl mb-10">
-                If a picture is worth a thousand words, a video is worth a thousand images. Increase your conversions by adding visual content and podcasting to bring your brand alive.
-            </p>
-            <p class="flex flex-row cursor-pointer btn_desplegable" data-id="section5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="66" height="66" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c4149" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21l18 0" />
+                    <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+                    <path d="M5 21l0 -10.15" />
+                    <path d="M19 21l0 -10.15" />
+                    <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                </svg>`}
+        d2_title="Marketplaces"
+        d2_li={['<li class="font-bold mb-1">Amazon, AliExpress</li>','<li class="font-bold mb-1">Marketplace Promotion</li>','<li class="font-bold mb-1">Product Sync</li>']}
+        d3_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-share" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M6 9l6 6l6 -6" />
-                </svg>
-                <span class="place-content-center font-overpass text-2xl">Know more</span>
-            </p>
-        </div>
-    </section>
-    <div class="w-full bg-primary text-white content_desplegable h-0 overflow-hidden transition-all" data-id="section5">
-        <div class="w-10/12 grid grid-cols-11 gap-5 mx-auto py-12 pl-12">
-            <div class="col-span-3 col-start-2">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-movie" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                        <path d="M8 4l0 16" />
-                        <path d="M16 4l0 16" />
-                        <path d="M4 8l4 0" />
-                        <path d="M4 16l4 0" />
-                        <path d="M4 12l16 0" />
-                        <path d="M16 8l4 0" />
-                        <path d="M16 16l4 0" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Video</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Animated Infographics
-                    </li>
-                    <li class="font-bold mb-1">
-                        Product Presentations
-                    </li>
-                    <li class="font-bold mb-1">
-                        Client Testimonials
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3 ">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-microphone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 2m0 3a3 3 0 0 1 3 -3h0a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3h0a3 3 0 0 1 -3 -3z" />
-                        <path d="M5 10a7 7 0 0 0 14 0" />
-                        <path d="M8 21l8 0" />
-                        <path d="M12 17l0 4" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Voice</h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Radio Adverts
-                    </li>
-                    <li class="font-bold mb-1">
-                        Multilingual Voiceovers
-                    </li>
-                    <li class="font-bold mb-1">
-                        Podcasting
-                    </li>
-                </ul>
-            </div>
-            <div class="col-span-3">
-                <div class="flex flex-row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
-                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
-                        <path d="M3 6l0 13" />
-                        <path d="M12 6l0 13" />
-                        <path d="M21 6l0 13" />
-                    </svg>
-                    <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">Storytelling </h4>
-                </div>
-                <ul class="list-disc ml-[70px]">
-                    <li class="font-bold mb-1">
-                        Social Media Shorts
-                    </li>
-                    <li class="font-bold mb-1">
-                        E-Commerce Videos
-                    </li>
-                    <li class="font-bold mb-1">
-                        DNA & Brandgibility
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+                    <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M12.5 17h-6.5v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                    <path d="M16 22l5 -5" />
+                    <path d="M21 21.5v-4.5h-4.5" />
+                </svg>`}
+        d3_title="E-Commerce Marketing"
+        d3_li={['<li class="font-bold mb-1">Automated E-Mails</li>','<li class="font-bold mb-1">AI Smart Search</li>','<li class="font-bold mb-1">Live Shopping</li>']}
+    />
 
-<script>
-    const elements = document.querySelectorAll('.btn_desplegable');
-
-    elements.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            const targetElement = event.currentTarget as HTMLElement;
-            const dataId = targetElement.getAttribute('data-id');
-            document.querySelector(`p[data-id=${dataId}] svg`)?.classList.toggle("rotate-180");
-            document.querySelector(`div[data-id=${dataId}]`)?.classList.toggle("h-56");
-        });
-    });
-    
-
-</script>
+    <ServicesItem
+        containerClass=""
+        imgPosition="right"
+        imgUrl="services-4.webp"
+        title="E-Mail Marketing"
+        subtitle="Reach consumers with relevance, in Real Time"
+        text="Stop boring all your customers with the same message. Let's create more effective customer journeys together with AI-based Marketing Automation."
+        dataID="section4"
+        d1_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 14l11 -11" />
+                    <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+                </svg>`}
+        d1_title="E-Mail Automation"
+        d1_li={['<li class="font-bold mb-1">Customer Journeys</li>','<li class="font-bold mb-1">Triggers & Business Rules</li>','<li class="font-bold mb-1">Omnichannel Experiences</li>']}
+        d2_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3" />
+                    <path d="M4 6v6c0 1.453 2.755 2.665 6.414 2.941" />
+                    <path d="M20 11v-5" />
+                    <path d="M4 12v6c0 1.579 3.253 2.873 7.383 2.991" />
+                    <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+                </svg>`}
+        d2_title="Data Integration"
+        d2_li={['<li class="font-bold mb-1">Data Architecture</li>','<li class="font-bold mb-1">CRM / Data Optimisation</li>','<li class="font-bold mb-1">Reporting</li>']}
+        d3_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+                    <path d="M9 9h6v6h-6z" />
+                    <path d="M3 10h2" />
+                    <path d="M3 14h2" />
+                    <path d="M10 3v2" />
+                    <path d="M14 3v2" />
+                    <path d="M21 10h-2" />
+                    <path d="M21 14h-2" />
+                    <path d="M14 21v-2" />
+                    <path d="M10 21v-2" />
+                </svg>`}
+        d3_title="AI Personalisation"
+        d3_li={['<li class="font-bold mb-1">Smart Content</li>','<li class="font-bold mb-1">Smart Audiences</li>','<li class="font-bold mb-1">Smart Deliverability</li>']}
+    />
+              
+    <ServicesItem
+        containerClass=""
+        imgPosition="left"
+        imgUrl="services-5.webp"
+        title="Video & Voice"
+        subtitle="Share your Brand Story in compelling ways"
+        text="If a picture is worth a thousand words, a video is worth a thousand images. Increase your conversions by adding visual content and podcasting to bring your brand alive."
+        dataID="section5"
+        d1_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-movie" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 4l0 16" />
+                    <path d="M16 4l0 16" />
+                    <path d="M4 8l4 0" />
+                    <path d="M4 16l4 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M16 8l4 0" />
+                    <path d="M16 16l4 0" />
+                </svg>`}
+        d1_title="Video"
+        d1_li={['<li class="font-bold mb-1">Animated Infographics</li>','<li class="font-bold mb-1">Product Presentations</li>','<li class="font-bold mb-1">Client Testimonials</li>']}
+        d2_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-microphone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 2m0 3a3 3 0 0 1 3 -3h0a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3h0a3 3 0 0 1 -3 -3z" />
+                    <path d="M5 10a7 7 0 0 0 14 0" />
+                    <path d="M8 21l8 0" />
+                    <path d="M12 17l0 4" />
+                </svg>`}
+        d2_title="Voice"
+        d2_li={['<li class="font-bold mb-1">Radio Adverts</li>','<li class="font-bold mb-1">Multilingual Voiceovers</li>','<li class="font-bold mb-1">Podcasting</li>']}
+        d3_svg={`<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                    <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                    <path d="M3 6l0 13" />
+                    <path d="M12 6l0 13" />
+                    <path d="M21 6l0 13" />
+                </svg>`}
+        d3_title="Storytelling"
+        d3_li={['<li class="font-bold mb-1">Social Media Shorts</li>','<li class="font-bold mb-1">E-Commerce Videos</li>','<li class="font-bold mb-1">DNA & Brandgibility</li>']}
+    />
+                   

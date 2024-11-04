@@ -40,8 +40,6 @@ images: https://unsplash.com/es
     - responsive
 - Services
     - responsive
-    - función open/close desplegables
-    - componente servicio pasando todos los datos y la posición de la img
 - Counter
     - responsive
 - Clients

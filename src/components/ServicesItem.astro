@@ -1,0 +1,117 @@
+---
+interface Props{
+    containerClass: string
+    imgPosition: string
+    imgUrl: string
+    title: string
+    subtitle: string
+    text:string
+    dataID:string
+    d1_svg: string
+    d1_title: string
+    d1_li: Array<string>
+    d2_svg: string
+    d2_title: string
+    d2_li: Array<string>
+    d3_svg: string
+    d3_title: string
+    d3_li: Array<string>
+}
+
+const { containerClass, imgPosition, imgUrl, title, subtitle, text, dataID, d1_svg, d1_title, d1_li, d2_svg, d2_title, d2_li, d3_svg, d3_title, d3_li} = Astro.props;
+
+const positionImg = imgPosition === 'left'? "col-start-2" : "col-start-9";
+const positionText = imgPosition === 'left'? "col-start-6" : "col-start-2";
+
+---
+
+<section class={`
+    w-10/12 grid grid-cols-12 gap-5 mx-auto mb-16 mt-32
+    ${containerClass}
+`}>
+    {imgPosition === 'left' && (
+        <div class={`
+            col-span-3 
+            ${positionImg}`
+        }>
+            <img src={imgUrl} alt="" />
+        </div>
+    )}
+    <div class={`
+        col-span-6 place-content-center
+        ${positionText}
+    `}>
+        <h3 class="font-worksans font-bold text-6xl mb-9">
+            {title}
+        </h3>
+        <p class="font-worksans font-bold text-4xl mb-7">
+            {subtitle}
+        </p>
+        <p class="font-overpass text-2xl mb-10">
+            {text}
+        </p>
+        <p class="flex flex-row cursor-pointer btn_desplegable" data-id={dataID}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="66" height="66" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c4149" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M6 9l6 6l6 -6" />
+            </svg>
+            <span class="place-content-center font-overpass text-2xl">Know more</span>
+        </p>
+    </div>
+    {imgPosition === 'right' && (
+        <div class={`
+            col-span-3 
+            ${positionImg}`
+        }>
+            <img src={imgUrl} alt="" />
+        </div>
+    )}
+</section>
+<div class="w-full bg-primary text-white content_desplegable h-0 overflow-hidden transition-all" data-id={dataID}>
+    <div class="w-10/12 grid grid-cols-11 gap-5 mx-auto py-12 pl-12">
+        <div class="col-span-3 col-start-2">
+            <div class="flex flex-row">
+                <div set:html={d1_svg} />
+                <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">{d1_title}</h4>
+            </div>
+            <ul 
+                class="list-disc ml-[70px]" 
+                set:html={d1_li} >
+            </ul>
+        </div>
+        <div class="col-span-3 ">
+            <div class="flex flex-row">
+                <div set:html={d2_svg} />
+                <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">{d2_title}</h4>
+            </div>
+            <ul 
+                class="list-disc ml-[70px]" 
+                set:html={d2_li} >
+            </ul>
+        </div>
+        <div class="col-span-3">
+            <div class="flex flex-row">
+                <div set:html={d3_svg} />
+                <h4 class="place-content-center font-overpass font-bold text-2xl pl-3">{d3_title}</h4>
+            </div>
+            <ul 
+                class="list-disc ml-[70px]" 
+                set:html={d3_li} >
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const elements = document.querySelectorAll('.btn_desplegable');
+
+    elements.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            const targetElement = event.currentTarget as HTMLElement;
+            const dataId = targetElement.getAttribute('data-id');
+            document.querySelector(`p[data-id=${dataId}] svg`)?.classList.toggle("rotate-180");
+            document.querySelector(`div[data-id=${dataId}]`)?.classList.toggle("h-56");
+        });
+    });    
+</script>
