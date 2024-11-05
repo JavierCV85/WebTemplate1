@@ -29,36 +29,14 @@ images: https://unsplash.com/es
     - Description
     - favicon
     - traducción En / ES (i18n)
-    - sectionheader (mb incorrecto cuando no hay subtitle)
-- Header
-    - desplegable de iconos sociales
     - responsive
-    - cambio estilos cuando se hace scroll (y corregir error de que ocupa mucho)
+- Header
+    - desplegable de iconos sociales  
+    - enlaces a las secciones
 - Video
     - buscar un video de mejor calidad
-- Description
-    - responsive
-- Services
-    - responsive
-- Counter
-    - responsive
-- Clients
-    - configurar bien el carrusel
-    - responsive
-- CaseStudies
-    - responsive
-- Banner 
-    - responsive
-    - no me gusta la forma de hacer que el link sea condicional... 
 - Podcast
     - Buscar player
-    - responsive
 - Team
-    - responsive
     - mejorar hover de los circulos
-    - más margin bottom en los circulos
-    - circulos como componente? (si, mucho mejor)
-- Lab
-    - responsive
-    - botón como componente aparte
-- Contacto
+    - cambiar fotos y quitar lorem ipsums

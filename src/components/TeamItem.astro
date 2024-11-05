@@ -1,0 +1,28 @@
+---
+interface Props{
+    imgUrl: string
+    name: string
+    title: string
+    text: string
+}
+
+const { imgUrl, name, title, text } = Astro.props;
+
+---
+
+<div class="col-span-3 mb-16">
+    <div class="relative group transition-all duration-500 overflow-hidden rounded-full mb-8">
+        <img src=`/${imgUrl}` 
+            class="relative mx-auto"
+        />
+        <div class="absolute top-100 left-0 w-full h-full rounded-full
+                  text-center flex flex-col justify-center bg-primary bg-opacity-50
+                  duration-300 transition-all
+                  group-hover:-mt-[98%]"
+        >
+            <p class="font-worksans font-bold text-1xl px-6 text-white">{text}</p>
+        </div>
+    </div>
+    <p class="font-worksans font-bold text-2xl uppercase text-center mb-1">{name}</p>
+    <p class="font-worksans text-1xl text-center mb-2">{title}</p>
+</div>
